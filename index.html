@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .faq-container {
+            position: relative;
+            border-bottom: 0px solid #e9e9e9;
+            padding: 0px;
+            margin: 0px auto;
+            max-width: 650px;
+            text-align: center;
+            overflow: hidden;
+            height: auto;
+            background: rgba(255,255,255,0);
+			background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, rgba(247,247,247,0) 53%, rgba(255,255,255,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(47%, rgba(246,246,246,0)), color-stop(53%, rgba(247,247,247,0)), color-stop(100%, rgba(255,255,255,1)));
+			background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, rgba(247,247,247,0) 53%, rgba(255,255,255,1) 100%);
+			background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, rgba(247,247,247,0) 53%, rgba(255,255,255,1) 100%);
+			background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, rgba(247,247,247,0) 53%, rgba(255,255,255,1) 100%);
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, rgba(247,247,247,0) 53%, rgba(255,255,255,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+        }
+    
+        .faq-button {
+            position: relative;
+            width: 30px;
+            height: 80px;
+            background-color: transparent;
+            border: 0px solid #ccc;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: top center;
+            transition: transform 0.3s ease-in-out;
+            margin: 0 auto;
+            
+        }
+    
+        .faq-button::before {
+            content: '\25BE';
+            font-size: 60px;
+            color: #575757;
+            
+        }
+    
+        .faq-content {
+            max-height: 13em;
+            overflow: hidden;
+            transition: max-height 3.3s ease-in-out;
+            position: relative;
+			padding: 15px 20px 15px 20px;
+        }
+        .faq-content::after { 
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(from bottom, rgba(242, 242, 242, 1), rgba(242, 242, 242, 0));
+            pointer-events: none;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        } 
+
+        .faq-content.show::after {
+            opacity: 0;
+        }
+
+        .faq-button:hover + .faq-content,
+        .faq-content.show {
+            max-height: 1500px;
+        }
+        
+        .faq-bottom {
+           position: absolute;
+            margin-top:-100px;
+            background: rgba(255,255,255,0);
+            background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 11%, rgba(255,255,255,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(11%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1)));
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 11%, rgba(255,255,255,1) 100%);
+            background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 11%, rgba(255,255,255,1) 100%);
+            background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 11%, rgba(255,255,255,1) 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 11%, rgba(255,255,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+
+
+            height: 99px;
+            width: 100%;
+            z-index: 2;
+}
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="faq-content" id="faqContent">
+            <h2 class="about_us-title" style="text-align: center;">ÄŚastĂ© dotazy</h2>
+<p>Ahoj, jsem <strong>ZelenĂˇ Ĺ˝irafa</strong> a rĂˇda bych ti pĹ™edstavila svĹŻj e-shop. PĹ™ednÄ› si mÄ› moĹľnĂˇ <strong>pamatujeĹˇ</strong> kvĹŻli naĹˇĂ­ <strong>skvÄ›lĂ© nabĂ­dce koÄŤĂˇrkĹŻ</strong>. Pokud si u mÄ› koupĂ­Ĺˇ koÄŤĂˇrek za vĂ­ce neĹľ 5 000 KÄŤ, dopravu mĂˇĹˇ zcela <strong>zdarma</strong>! Jinak standardnĂ­ cena dopravy je 140 KÄŤ. Neboj, vĹˇechny nĂˇklady ti budou vĹľdy pĹ™ehlednÄ› rozepsanĂ© na strĂˇnce koĹˇĂ­ku pĹ™edtĂ­m, neĹľ se <strong>rozhodneĹˇ</strong> pro <strong>objednĂˇnĂ­</strong>.</p>
+<h3>MoĹľnĂˇ se ptĂˇĹˇ, jak dlouho trvĂˇ doruÄŤenĂ­ objednĂˇvky?</h3>
+<p>KaĹľdĂ˝ produkt mĂˇ na svĂ© strĂˇnce uvedenĂ˝ termĂ­n odeslĂˇnĂ­. Jakmile zboĹľĂ­ odeĹˇlu, informuje tÄ› pĹ™epravce a domluvĂ­ se s tebou na pĹ™edĂˇnĂ­.</p>
+<h3>Platit za objednĂˇvku mĹŻĹľeĹˇ rĹŻznĂ˝mi zpĹŻsoby.</h3>
+<p>NabĂ­zĂ­m platbu bankovnĂ­m pĹ™evodem, na dobĂ­rku, i platebnĂ­ kartou pĹ™Ă­mo u mÄ› v e-shopu nebo u kurĂ˝ra.</p>
+<h3>Pokud by ses rozhodl(a) objednĂˇvku zruĹˇit, nenĂ­ problĂ©m.</h3>
+<p>StaÄŤĂ­ mÄ› kontaktovat telefonicky, emailem, nebo pĹ™es kontaktnĂ­ formulĂˇĹ™. A pokud by ti nÄ›jakĂ© zboĹľĂ­ nevyhovovalo, mĹŻĹľeĹˇ ho vrĂˇtit zpÄ›t do 14 dnĹŻ.</p>
+<h3>Pokud jde o vrĂˇcenĂ­ zboĹľĂ­, mĂˇm jednoduchĂ© podmĂ­nky.</h3>
+<p>NepouĹľitĂ© a nepoĹˇkozenĂ© zboĹľĂ­ mi mĹŻĹľeĹˇ vrĂˇtit zpÄ›t do 14 dnĹŻ od doruÄŤenĂ­, a to vÄŤetnÄ› poĹˇtovnĂ©ho. Pokud by ti zboĹľĂ­ z nÄ›jakĂ©ho dĹŻvodu nevyhovovalo, staÄŤĂ­ mÄ› kontaktovat, dohodneme se na dalĹˇĂ­m postupu.</p>
+<h3>StejnÄ› tak pokud by se objevil nÄ›jakĂ˝ problĂ©m s kvalitou zboĹľĂ­, mĹŻĹľeĹˇ ho u mÄ› reklamovat.</h3>
+<p>Pro bezproblĂ©movou reklamaci staÄŤĂ­ dodrĹľet pravidla uvedenĂˇ v reklamaÄŤnĂ­m Ĺ™Ăˇdu. PĹ™ed reklamacĂ­ je ale dobrĂ© mÄ› kontaktovat, rĂˇda ti poradĂ­m, jak postupovat. NezapomÄ›Ĺ oÄŤiĹˇtÄ›nĂ© zboĹľĂ­ dobĹ™e zabalit! Jinak by se mohlo po ceste rozbĂ­t.</p>
+<h3>MoĹľnĂˇ si Ĺ™Ă­kĂˇĹˇ, jestli mĂˇm showroom nebo kamennou prodejnu.</h3>
+<p>OdpovÄ›ÄŹ je ne. Jsem ÄŤistÄ› internetovĂ˝ e-shop. SnaĹľĂ­m se ti zajistit co nejlepĹˇĂ­ cenu a prezentaci produktĹŻ. DbĂˇm na pĹ™esnost popiskĹŻ produktĹŻ a kvalitu fotografiĂ­ bez obobrazovĂ˝ch filtrĹŻ. DĂ­ky tomu mĹŻĹľu nabĂ­dnout fĂ©rovĂ© ceny, vÄ›rnou prezentaci produktu a tĹ™eba alespoĹ trochu usnadnit vĂ˝bÄ›r.</p>
+<h3>Jako ZelenĂˇ Ĺ˝irafa se snaĹľĂ­m, aby byl tvĹŻj nĂˇkupnĂ­ zĂˇĹľitek co nejpĹ™Ă­jemnÄ›jĹˇĂ­ a nejsnazĹˇĂ­.</h3>
+<p>Pokud bys mÄ›l(a) jakĂ©koliv dotazy nebo potĹ™eboval(a) dalĹˇĂ­ informace, nevĂˇhej mÄ› kontaktovat. RĂˇda ti pomĹŻĹľu se vĹˇĂ­m, co potĹ™ebujeĹˇ.</p>
+<p></p>
+<p>TÄ›ĹˇĂ­m se na tvou nĂˇvĹˇtÄ›vu a pĹ™eji ti pĹ™Ă­jemnĂ˝ nĂˇkup!</p>
+<p><em><strong>ZelenĂˇ Ĺ˝irafa</strong></em></p>
+        </div>
+    </div>
+    <div class="faq-bottom"></div>
+    <div class="faq-button"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var faqButton = document.querySelector('.faq-button');
+            faqButton.addEventListener('click', function() {
+                var faqContent = document.getElementById('faqContent');
+                faqContent.classList.toggle('show');
+            });
+        });
+    </script>
+    
+</body>
+</html>
